@@ -1,0 +1,12 @@
+[submodule "orbit"]
+	path = orbit
+  url = https://github.com/styx-static/styx-theme-orbit.git
+[submodule "showcase"]
+	path = showcase
+  url = https://github.com/styx-static/styx-theme-showcase.git
+[submodule "agency"]
+	path = agency
+  url = https://github.com/styx-static/styx-theme-agency.git
+[submodule "hyde"]
+	path = hyde
+  url = https://github.com/styx-static/styx-theme-hyde.git

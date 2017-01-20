@@ -10,3 +10,6 @@
 [submodule "hyde"]
 	path = hyde
   url = https://github.com/styx-static/styx-theme-hyde.git
+[submodule "generic-templates"]
+	path = generic-templates
+	url = https://github.com/styx-static/styx-theme-generic-templates.git

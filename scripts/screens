@@ -1,7 +1,7 @@
 #! /usr/bin/env nix-shell
 #! nix-shell -i bash -p phantomjs2 imagemagick
 
-# This script update the screenshots for every theme
+# This script update every theme screenshot
 
 # styx command can be overriden to use dev versions
 #
@@ -9,11 +9,12 @@
 
 : ${styx:="styx"}
 scriptDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+themesDir="$(realpath $scriptDir/../)"
 
 echo "Updating themes screenshots."
 echo "---"
 
-for d in */ ; do
+for d in $themesDir/*/ ; do
   if [ -d "$d/example" ]; then
     themeDir="$(realpath $d)"
     siteDir="$(realpath $d)/example"

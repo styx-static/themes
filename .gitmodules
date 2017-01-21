@@ -1,15 +1,15 @@
 [submodule "orbit"]
 	path = orbit
-  url = https://github.com/styx-static/styx-theme-orbit.git
+  url = git@github.com:styx-static/styx-theme-orbit.git
 [submodule "showcase"]
 	path = showcase
-  url = https://github.com/styx-static/styx-theme-showcase.git
+  url = git@github.com:styx-static/styx-theme-showcase.git
 [submodule "agency"]
 	path = agency
-  url = https://github.com/styx-static/styx-theme-agency.git
+  url = git@github.com:styx-static/styx-theme-agency.git
 [submodule "hyde"]
 	path = hyde
-  url = https://github.com/styx-static/styx-theme-hyde.git
+  url = git@github.com:styx-static/styx-theme-hyde.git
 [submodule "generic-templates"]
 	path = generic-templates
-	url = https://github.com/styx-static/styx-theme-generic-templates.git
+	url = git@github.com:styx-static/styx-theme-generic-templates.git

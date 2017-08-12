@@ -14,8 +14,8 @@
 	path = generic-templates
 	url = git@github.com:styx-static/styx-theme-generic-templates.git
 [submodule "themes/ghostwriter"]
-	path = themes/ghostwriter
+	path = ghostwriter
 	url = git@github.com:styx-static/styx-theme-ghostwriter.git
 [submodule "themes/nix"]
-	path = themes/nix
+	path = nix
 	url = git@github.com:styx-static/styx-theme-nix.git

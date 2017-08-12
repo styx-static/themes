@@ -5,7 +5,7 @@
 
 # styx command can be overriden to use dev versions
 #
-#   styx="$(nix-build ../styx)/bin/styx --arg pkgs \"import ../styx/nixpkgs\"" ./scripts/screens
+#   styx="$(nix-build /path/to/styx)/bin/styx" ./scripts/screens
 
 : ${styx:="styx"}
 scriptDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"

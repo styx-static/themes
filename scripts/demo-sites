@@ -1,0 +1,29 @@
+#! /usr/bin/env sh
+
+# styx command can be overriden to use dev versions
+#
+#   styx="$(nix-build /path/to/styx)/bin/styx" ./scripts/demo-sites
+
+: ${styx:="styx"}
+scriptDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+themesDir="$(realpath $scriptDir/../)"
+
+
+for d in $themesDir/*/ ; do
+  if [ -d "$d/example" ]; then
+    themeDir="$(realpath $d)"
+    siteDir="$(realpath $d)/example"
+
+    echo "Updating demo site of $siteDir"
+    eval "$styx deploy --gh-pages --in $siteDir --out $themeDir"
+
+    (
+    cd $themeDir
+    (cd gh-pages && git push -u origin gh-pages) && git push -u origin gh-pages
+    )
+    echo "$siteDir demo site updated"
+    echo "---"
+  fi
+done
+
+echo "Finished!"

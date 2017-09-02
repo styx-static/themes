@@ -15,7 +15,7 @@ for d in $themesDir/*/ ; do
     siteDir="$(realpath $d)/example"
 
     echo "Updating demo site of $siteDir"
-    eval "$styx deploy --gh-pages --in $siteDir --out $themeDir"
+    eval "$styx deploy --gh-pages --site $siteDir --in $themeDir"
 
     (
     cd $themeDir
